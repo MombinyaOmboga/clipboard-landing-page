@@ -41,13 +41,17 @@ header{
     align-items: flex-end;
 }
 
-.hero-section{
+.hero-section, .additional-section, .bottom-line{
     text-align: center;
     line-height: 28px;
     width: 550px;
     max-width: 900px;
     margin: auto;
     font-size: 16px;
+}
+
+#additional-image{
+    width: 90%;
 }
 
 .buttons{
@@ -62,7 +66,7 @@ button{
     padding: 8px;
     border: none;
     border-radius: 25px;
-    box-shadow: 2px 2px 1px grey;
+    box-shadow: 0 2px 1px rgb(170, 167, 167);
     color: white;
 }
 
@@ -73,3 +77,64 @@ button{
 #mac{
     background-color: hsl(171, 66%, 44%);
 }
+
+.intro{
+    padding-bottom: 70px;
+}
+
+.hero{
+    padding-bottom: 20px;
+}
+
+.product-section{
+    margin: 20px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .product-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .product-list li{
+    width: 60%;
+  }
+
+  .sponsor-tags{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sponsor-tags img{
+    width: 10%;
+  }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  #logo-bottom{
+    width: 30px;
+  }
+
+  .footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:  20px;
+  }
+
