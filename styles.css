@@ -6,6 +6,7 @@ body{
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
 }
 
 header{
@@ -15,10 +16,6 @@ header{
     position: absolute;
     width: 100%;
     top: 0;
-}
-
-.hero{
-    padding: 50px 0 0 50px;
 }
 
 #logo{
@@ -31,7 +28,6 @@ header{
 
 .intro{
     padding-top: 120px;
-    font-size: 18px;
     line-height: 27px;
     color: #333;
 }
@@ -57,7 +53,6 @@ header{
     width: 550px;
     max-width: 900px;
     margin: auto;
-    font-size: 16px;
 }
 
 #additional-image{
@@ -91,18 +86,15 @@ button{
 .product-section{
     margin: 20px;
 }
-
-.product-list {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
   
   .product-list {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    text-align: center;
   }
   
   .product-list li{
@@ -158,12 +150,43 @@ button{
 
 
   @media only screen and (max-width: 960px){
+
     .features{
         flex-direction: column;
     }
 
     .feature-list{
-        width: 100%;
-        max-width: 25px auto;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero, .intro{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    #additional-image{
+        width: 60%;
+    }
+
+    .sponsor-tags{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sponsor-tags img{
+        width: 25%;
+    }
+
+    .product-list{
+        flex-direction: column;
+    }
+
+    .bottom-header{
+        text-align: center;
+        margin: auto;
+        width: 50%;
     }
   }
