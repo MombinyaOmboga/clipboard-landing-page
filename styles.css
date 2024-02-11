@@ -144,8 +144,27 @@ button{
     text-decoration: none;
   }
 
+  .footer ul li a:hover{
+    color: hsl(171, 66%, 44%);
+  }
+
   .social a{
     color: rgb(82, 79, 79);
+    transition: transform 0.2s ease;
+  }
+
+  button:hover{
+    transform: scale(1.05);
+    transition: transform 0.1s ease;
+    cursor: pointer;
+  }
+
+  .social a{
+    margin-left: 10px;
+  }
+
+  .social a:hover{
+    color: hsl(171, 66%, 44%); 
   }
 
 
@@ -188,5 +207,9 @@ button{
         text-align: center;
         margin: auto;
         width: 50%;
+    }
+
+    button{
+        width: 100%;
     }
   }
